@@ -17,6 +17,7 @@ class Lifecycle extends Component {
     this.setState({tmp_state2:true});
   }
 
+  // return value가 true일 경우 렌더가 한 번 더 호출
   shouldComponentUpdate(props, state) {
     console.log('6. shouldComponentUpdate Call / tmp_state2 =', state.tmp_state2);
     return state.tmp_state2;

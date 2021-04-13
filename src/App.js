@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ES6 from './components/ES6';
 import Lifecycle from './components/Lifecycle';
 
 
@@ -8,7 +9,7 @@ function App() {
     <div>
       <h1>Start React 200!</h1>
       <p>HTML 적용하기</p>
-      <Lifecycle prop_value='FromApp.js'></Lifecycle>
+      <ES6 />
     </div>
   );
 }
