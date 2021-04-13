@@ -14,6 +14,12 @@ class Lifecycle extends Component {
   componentDidMount() {
     console.log('4. componentDidMount Call');
     console.log('5. tmp_state:', this.state.tmp_state);
+    this.setState({tmp_state2:true});
+  }
+
+  shouldComponentUpdate(props, state) {
+    console.log('6. shouldComponentUpdate Call / tmp_state2 =', state.tmp_state2);
+    return state.tmp_state2;
   }
 
   render () {
